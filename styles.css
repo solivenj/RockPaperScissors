@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    width: 100vh;
+}
+
+button {
+    height: 10rem;
+    width: 10rem;
+}
+
+.moves {
+    text-align: center;
+}
