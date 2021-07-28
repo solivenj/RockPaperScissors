@@ -6,17 +6,37 @@
   <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-    <div id="moves"></div>
-    <div id="buttons">
+  <div class="header">Rock Paper Scissors</div>
+  <div class="round">
+    <div id="scoreboard">
+        <div id="pScore">0</div>
+        <div id="result"></div>
+        <div id="cScore">0</div>
+    </div>
+    <div id="images">
+      <img id="pMove" />
+      <p id="vs">VS</p>
+      <img id="cMove" />
+    </div>
+    <div class="players">
+      <div id="player">Player</div>
+      <div id="spacer"></div>
+      <div id="computer">Computer</div>
+    </div>
+  </div>
+  <div id="moves">
+    <div id="prompt"></div>
+    <div class="buttons">
       <button type="button">Rock</button>
       <button type="button">Paper</button>
       <button type="button">Scissors</button>
     </div>
-    <div id="scores">
-      <div id="pScore"></div>
-      <div id="cScore"></div>
-    </div>
-    <div id="winner"></div>
-    <script src="app.js"></script>
+  </div>
+  <!-- <div id="scores">
+    <div id="pScore"></div>
+    <div id="cScore"></div>
+  </div> -->
+  <div id="winner"></div>
+  <script src="app.js"></script>
 </body>
 </html>
