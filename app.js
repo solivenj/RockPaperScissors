@@ -48,9 +48,10 @@ function addReset() {
 
 function checkWinner() {
     if (pScore == 5 || cScore == 5) {
-        winner.textContent = "Winner: ";
-        winner.textContent += pScore == 5 ? "Player" : "Computer";
+        prompt.textContent = "Winner: ";
+        prompt.textContent += pScore == 5 ? "Player" : "Computer";
         buttons.forEach(button => button.disabled = true);
+        buttons.forEach(button=> button.style.display = "none");
         addReset();
     }
 }
@@ -83,8 +84,10 @@ function reset(e) {
     cScoreDiv.textContent = "0";
     let imgs = document.querySelectorAll('img');
     imgs.forEach(img => img.style.display = 'none');
-    buttons.forEach(button => button.disabled = false);
+    buttons.forEach(button => button.style.display = "");
+    buttons.forEach(button => button.disabled = "");
     result.textContent = "";
+    prompt.textContent = "Choose a move:";
 }
 
 let pScore = cScore = 0;
