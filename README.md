@@ -2,4 +2,4 @@
 
 Simple rock, paper, scissors made using HTML, CSS, and Javascript.
 
-[Live demo](jcsoliven.com/rockpaperscissors)
+[Live demo](https://jcsoliven.com/rockpaperscissors)
